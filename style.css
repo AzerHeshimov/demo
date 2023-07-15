@@ -1,13 +1,43 @@
 body {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-weight: 500;
 }
 
-a {
-  color: orange;
+#first .minibox {
+  border: 1px solid #ea0b0b;
+  height: 125px;
+  width: 125px;
+  transition: 1s;
 }
-
-a:hover {
-  color: black;
+#first .minibox:hover {
+  transition: 1s;
+  border-radius: 10px;
+  border: 5px solid #ea0b0b;
+  height: 150px;
+  width: 150px;
+  position: relative;
 }
-/*# sourceMappingURL=style.css.map */
+#first .mbp {
+  position: sticky;
+  top: 0;
+  background-color: #e5ceef;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+@media (max-width: 768px) {
+  #first h5, #first h1 {
+    font-size: 15px;
+  }
+  #first .minibox {
+    width: 100px;
+    height: 100px;
+    background-color: #f4d4cc;
+  }
+}
+@media (max-width: 500px) {
+  #first .minibox {
+    width: 50px;
+    height: 50px;
+    background-color: #a9e0ec;
+  }
+}/*# sourceMappingURL=style.css.map */
