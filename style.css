@@ -3,21 +3,21 @@ body {
   font-weight: 500;
 }
 
-#first .minibox {
+#boxes .minibox {
   border: 1px solid #ea0b0b;
   height: 125px;
   width: 125px;
   transition: 1s;
 }
-#first .minibox:hover {
+#boxes .minibox:hover {
   transition: 1s;
   border-radius: 10px;
   border: 5px solid #ea0b0b;
   height: 150px;
   width: 150px;
-  position: relative;
+  opacity: 0;
 }
-#first .mbp {
+#boxes .mbp {
   position: sticky;
   top: 0;
   background-color: #e5ceef;
@@ -25,19 +25,57 @@ body {
   opacity: 0.5;
 }
 @media (max-width: 768px) {
-  #first h5, #first h1 {
-    font-size: 15px;
+  #boxes h5, #boxes h1 {
+    color: rgba(0, 0, 0, 0);
+    font-size: 20px;
   }
-  #first .minibox {
+  #boxes .minibox {
     width: 100px;
     height: 100px;
     background-color: #f4d4cc;
   }
 }
 @media (max-width: 500px) {
-  #first .minibox {
+  #boxes h5, #boxes h1 {
+    font-size: 15px;
+  }
+  #boxes .minibox {
     width: 50px;
     height: 50px;
     background-color: #a9e0ec;
   }
+}
+
+#button {
+  padding: 100px;
+}
+#button .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#button .box .minibox {
+  border: 3px solid rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+}
+#button .box .minibox:hover {
+  transition: 2s;
+  position: absolute;
+  left: 850px;
+}
+#button .mbp {
+  background-color: #c497ee;
+  z-index: -2;
+  left: 690px;
+}
+#button .mbp:hover {
+  transition: 5s;
+  position: absolute;
+  left: 900px;
+}
+#button .bgc {
+  background-color: #b3f2c7;
 }/*# sourceMappingURL=style.css.map */
