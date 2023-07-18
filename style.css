@@ -46,36 +46,53 @@ body {
   }
 }
 
-#button {
+#wave {
   padding: 100px;
 }
-#button .box {
+#wave .box {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-flow: row nowrap;
 }
-#button .box .minibox {
-  border: 3px solid rgba(0, 0, 0, 0);
-  border-radius: 10px;
+#wave .box .minibox {
+  height: 100px;
+  width: 100px;
+  border: 1px solid #010519;
+  transition: 2s;
+}
+#wave .box:hover .minibox {
+  transition: 2s;
+  margin: 10px;
   height: 150px;
   width: 150px;
-  position: absolute;
-}
-#button .box .minibox:hover {
+  border-radius: 20px;
+  background-color: #f7aaaa;
   transition: 2s;
-  position: absolute;
-  left: 850px;
 }
-#button .mbp {
-  background-color: #c497ee;
-  z-index: -2;
-  left: 690px;
+@media (max-width: 500px) {
+  #wave .box {
+    display: flex;
+    flex-flow: column wrap;
+  }
 }
-#button .mbp:hover {
-  transition: 5s;
-  position: absolute;
-  left: 900px;
+
+#start .btn {
+  transition: 1s;
+  height: 80px;
+  width: 150px;
+  background-color: #4d7aed;
+  color: white;
 }
-#button .bgc {
-  background-color: #b3f2c7;
+#start .btn li {
+  opacity: 0;
+}
+#start .btn:hover {
+  transition: 1s;
+  height: 300px;
+  width: 200px;
+  background-color: #841fa6;
+  border-radius: 10px;
+}
+#start .btn:hover li {
+  opacity: 1;
+  transition: 2s;
 }/*# sourceMappingURL=style.css.map */

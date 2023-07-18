@@ -1,0 +1,26 @@
+#wave
+    padding: 100px
+
+    .box
+        display: flex
+        flex-flow: row nowrap
+        .minibox
+            height: 100px
+            width: 100px
+            border: 1px solid #010519
+            transition: 2s
+        &:hover
+            .minibox
+                transition: 2s
+                margin: 10px
+                height: 150px
+                width: 150px
+                border-radius: 20px
+                background-color: #f7aaaa
+                transition: 2s
+                
+    @media ( max-width: 500px )
+        .box
+            display: flex
+            flex-flow: column wrap
+        
